@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -56,6 +57,7 @@ footer {
     color: #999999;
 }
 
+
 /* PLACES */
 
 .place {
@@ -79,11 +81,73 @@ footer {
     color: #1a3a5c;
 }
 
+
+/* SUGGEST A PLACE FORM */
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+fieldset {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    color: #1a3a5c;
+}
+
+fieldset label {
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #2e5c8a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a3a5c;
+}
+
 </style>
 
 </head>
 
+
 <body>
+
 
 <header>
 
@@ -227,6 +291,139 @@ alt="Beautiful Icelandic landscape with mountains and water"
 </section>
 
 
+<!-- SUGGEST A PLACE FORM -->
+
+<section>
+
+<h2>Suggest a Place</h2>
+
+<p>
+Know a great place that should be added to my guide?
+Tell me about it!
+</p>
+
+
+<form>
+
+
+<!-- PLACE NAME -->
+
+<label for="place-name">
+Place Name
+</label>
+
+<input
+type="text"
+id="place-name"
+name="place-name"
+required
+>
+
+
+<!-- CATEGORY -->
+
+<fieldset>
+
+<legend>What type of place is it?</legend>
+
+<label for="food">
+<input
+type="radio"
+id="food"
+name="category"
+value="food"
+>
+Food
+</label>
+
+<label for="study-spot">
+<input
+type="radio"
+id="study-spot"
+name="category"
+value="study-spot"
+>
+Study Spot
+</label>
+
+<label for="outdoors">
+<input
+type="radio"
+id="outdoors"
+name="category"
+value="outdoors"
+>
+Outdoors
+</label>
+
+</fieldset>
+
+
+<!-- WHAT'S GOOD ABOUT IT -->
+
+<fieldset>
+
+<legend>What's good about it?</legend>
+
+<label for="affordable">
+<input
+type="checkbox"
+id="affordable"
+name="good-points"
+value="affordable"
+>
+Affordable
+</label>
+
+<label for="good-wifi">
+<input
+type="checkbox"
+id="good-wifi"
+name="good-points"
+value="good-wifi"
+>
+Good Wi-Fi
+</label>
+
+<label for="quiet">
+<input
+type="checkbox"
+id="quiet"
+name="good-points"
+value="quiet"
+>
+Quiet
+</label>
+
+</fieldset>
+
+
+<!-- CONTACT EMAIL -->
+
+<label for="contact-email">
+Contact Email
+</label>
+
+<input
+type="email"
+id="contact-email"
+name="contact-email"
+required
+>
+
+
+<!-- BUTTON -->
+
+<button type="submit">
+Suggest Place
+</button>
+
+
+</form>
+
+</section>
+
+
 <footer>
 
 <p>
@@ -234,6 +431,7 @@ Created by Justine Kenneth San Diego &middot; 2026
 </p>
 
 </footer>
+
 
 </body>
 </html>
