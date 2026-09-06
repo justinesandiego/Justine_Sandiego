@@ -1,437 +1,305 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
+    <title>Justine Kenneth San Diego | Web Development</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Justine Kenneth San Diego | Web Development</title>
-
-<style>
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    line-height: 1.6;
-    color: #333333;
-    background-color: #fafafa;
-}
-
-header {
-    border-bottom: 3px solid #2e5c8a;
-    padding-bottom: 15px;
-    margin-bottom: 30px;
-}
-
-h1 {
-    color: #1a3a5c;
-    margin-bottom: 5px;
-}
-
-.subtitle {
-    color: #777777;
-    font-size: 16px;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-a {
-    color: #2e5c8a;
-}
-
-footer {
-    margin-top: 40px;
-    border-top: 1px solid #dddddd;
-    padding-top: 15px;
-    font-size: 14px;
-    color: #999999;
-}
-
-
-/* PLACES */
-
-.place {
-    margin-bottom: 30px;
-    padding: 20px;
-    border: 1px solid #dddddd;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.place img {
-    width: 100%;
-    max-width: 500px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-top: 10px;
-}
-
-.place h3 {
-    color: #1a3a5c;
-}
-
-
-/* SUGGEST A PLACE FORM */
-
-form {
-    margin-top: 20px;
-}
-
-label {
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-fieldset {
-    margin-top: 20px;
-    padding: 15px;
-    border: 1px solid #cccccc;
-    border-radius: 8px;
-}
-
-legend {
-    font-weight: bold;
-    color: #1a3a5c;
-}
-
-fieldset label {
-    font-weight: normal;
-    margin: 10px 0;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-    margin-right: 8px;
-}
-
-button {
-    margin-top: 20px;
-    padding: 12px 20px;
-    background-color: #2e5c8a;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #1a3a5c;
-}
-
-</style>
-
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
+    <!-- HEADER -->
+    <header>
+        <h1>Welcome to My First Website</h1>
 
-<header>
+        <p class="subtitle">
+            Justine Kenneth San Diego &middot; BTLED-Ict 2A &middot; Web Development
+        </p>
 
-<h1>Welcome to My First Website</h1>
+        <!-- NAVIGATION -->
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#places">Top Picks</a></li>
+                <li><a href="#suggest">Suggest a Place</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<p class="subtitle">
-Justine Kenneth San Diego &middot; BTLED-Ict 2A &middot; Web Development
-</p>
 
-</header>
+    <!-- MAIN CONTENT -->
+    <main>
 
+        <!-- ABOUT SECTION -->
+        <section id="about">
 
-<section>
+            <h2>About This Page</h2>
 
-<h2>About This Page</h2>
+            <p>
+                This is my home page for our Web Development course.
+                Every activity I complete will be listed below.
+            </p>
 
-<p>
-This is my home page for our Web Development course.
-Every activity I complete will be listed below.
-</p>
+        </section>
 
-</section>
 
+        <!-- ACTIVITIES SECTION -->
+        <section id="activities">
 
-<section>
+            <h2>My Activities</h2>
 
-<h2>My Activities</h2>
+            <ul class="activities-list">
 
-<ul>
+                <li>
+                    <a href="activity01/index.html">
+                        Activity 1 — My First Web Page
+                    </a>
+                </li>
 
-<!-- COPY THE LINE BELOW EACH TIME YOU FINISH AN ACTIVITY. -->
-<!-- Change the folder name and the activity title. -->
+                <li>
+                    <a href="https://justinesandiego.github.io/justine-motor-shop/">
+                        Activity 2 — Justine Motor Shop Page
+                    </a>
+                </li>
 
-<li>
-<a href="activity01/index.html">
-Activity 1 — My First Web Page
-</a>
-</li>
+                <li>
+                    <a href="https://justinesandiego.github.io/bacolod-coffee-spots/">
+                        Activity 3 — Bacolod Coffee Shop Page
+                    </a>
+                </li>
 
-<li>
-<a href="https://justinesandiego.github.io/justine-motor-shop/">
-Activity 2 — Justine Motor Shop Page
-</a>
-</li>
+            </ul>
 
-<li>
-<a href="https://justinesandiego.github.io/bacolod-coffee-spots/">
-Activity 3 — Bacolod Coffee Shop Page
-</a>
-</li>
+        </section>
 
-<!-- ADD YOUR NEW ACTIVITY LINKS HERE -->
 
-</ul>
+        <!-- TOP PICKS SECTION -->
+        <section id="places">
 
-</section>
+            <h2>My Top Picks</h2>
 
 
-<!-- RECOMMENDED PLACES -->
+            <!-- PLACE 1 -->
+            <article class="place">
 
-<section>
+                <h3>Canada</h3>
 
-<h2>My Top Picks</h2>
+                <p class="category">
+                    Nature and Travel — Canada
+                </p>
 
+                <p>
+                    I recommend Canada because it has beautiful mountains,
+                    lakes, forests, and many amazing places to explore.
+                    It is a great destination for people who enjoy nature
+                    and outdoor activities.
+                </p>
 
-<!-- PLACE 1 -->
+                <img
+                    src="https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=900&q=80"
+                    alt="Beautiful mountain and lake scenery in Canada"
+                >
 
-<article class="place">
+            </article>
 
-<h3>Canada</h3>
 
-<p>
-Nature and Travel — Canada
-</p>
+            <!-- PLACE 2 -->
+            <article class="place">
 
-<p>
-I recommend Canada because it has beautiful mountains,
-lakes, forests, and many amazing places to explore.
-It is a great destination for people who enjoy nature
-and outdoor activities.
-</p>
+                <h3>Japan</h3>
 
-<img
-src="https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=900&q=80"
-alt="Beautiful mountain and lake scenery in Canada"
->
+                <p class="category">
+                    Culture and Travel — Japan
+                </p>
 
-</article>
+                <p>
+                    I recommend Japan because of its unique culture,
+                    beautiful temples, modern cities, delicious food,
+                    and interesting history. It is a great place to
+                    experience something different.
+                </p>
 
+                <img
+                    src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=80"
+                    alt="Traditional Japanese temple and trees in Kyoto"
+                >
 
-<!-- PLACE 2 -->
+            </article>
 
-<article class="place">
 
-<h3>Japan</h3>
+            <!-- PLACE 3 -->
+            <article class="place">
 
-<p>
-Culture and Travel — Japan
-</p>
+                <h3>Iceland</h3>
 
-<p>
-I recommend Japan because of its unique culture,
-beautiful temples, modern cities, delicious food,
-and interesting history. It is a great place to
-experience something different.
-</p>
+                <p class="category">
+                    Nature and Adventure — Iceland
+                </p>
 
-<img
-src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=80"
-alt="Traditional Japanese temple and trees in Kyoto"
->
+                <p>
+                    I recommend Iceland because of its amazing natural
+                    scenery. Visitors can see waterfalls, mountains,
+                    volcanoes, glaciers, and beautiful landscapes.
+                    It is a great destination for adventure.
+                </p>
+
+                <img
+                    src="https://images.unsplash.com/photo-1504829857797-ddff29c27927?auto=format&fit=crop&w=900&q=80"
+                    alt="Beautiful Icelandic landscape with mountains and water"
+                >
+
+            </article>
+
+        </section>
+
+
+        <!-- SUGGEST A PLACE SECTION -->
+        <section id="suggest">
+
+            <h2>Suggest a Place</h2>
+
+            <p>
+                Know a great place that should be added to my guide?
+                Tell me about it!
+            </p>
+
+
+            <!-- SUGGESTION FORM -->
+            <form>
+
+                <!-- PLACE NAME -->
+                <label for="place-name">
+                    Place Name
+                </label>
+
+                <input
+                    type="text"
+                    id="place-name"
+                    name="place-name"
+                    placeholder="Enter a place name"
+                    required
+                >
+
+
+                <!-- CATEGORY -->
+                <fieldset>
 
-</article>
+                    <legend>What type of place is it?</legend>
+
+                    <label for="food">
+                        <input
+                            type="radio"
+                            id="food"
+                            name="category"
+                            value="food"
+                        >
+                        Food
+                    </label>
 
+                    <label for="study-spot">
+                        <input
+                            type="radio"
+                            id="study-spot"
+                            name="category"
+                            value="study-spot"
+                        >
+                        Study Spot
+                    </label>
 
-<!-- PLACE 3 -->
+                    <label for="outdoors">
+                        <input
+                            type="radio"
+                            id="outdoors"
+                            name="category"
+                            value="outdoors"
+                        >
+                        Outdoors
+                    </label>
 
-<article class="place">
+                </fieldset>
 
-<h3>Iceland</h3>
 
-<p>
-Nature and Adventure — Iceland
-</p>
+                <!-- GOOD POINTS -->
+                <fieldset>
 
-<p>
-I recommend Iceland because of its amazing natural
-scenery. Visitors can see waterfalls, mountains,
-volcanoes, glaciers, and beautiful landscapes.
-It is a great destination for adventure.
-</p>
+                    <legend>What's good about it?</legend>
 
-<img
-src="https://images.unsplash.com/photo-1504829857797-ddff29c27927?auto=format&fit=crop&w=900&q=80"
-alt="Beautiful Icelandic landscape with mountains and water"
->
+                    <label for="affordable">
+                        <input
+                            type="checkbox"
+                            id="affordable"
+                            name="good-points"
+                            value="affordable"
+                        >
+                        Affordable
+                    </label>
 
-</article>
+                    <label for="good-wifi">
+                        <input
+                            type="checkbox"
+                            id="good-wifi"
+                            name="good-points"
+                            value="good-wifi"
+                        >
+                        Good Wi-Fi
+                    </label>
 
+                    <label for="quiet">
+                        <input
+                            type="checkbox"
+                            id="quiet"
+                            name="good-points"
+                            value="quiet"
+                        >
+                        Quiet
+                    </label>
 
-</section>
+                </fieldset>
 
 
-<!-- SUGGEST A PLACE FORM -->
+                <!-- EMAIL -->
+                <label for="contact-email">
+                    Contact Email
+                </label>
 
-<section>
+                <input
+                    type="email"
+                    id="contact-email"
+                    name="contact-email"
+                    placeholder="Enter your email"
+                    required
+                >
 
-<h2>Suggest a Place</h2>
 
-<p>
-Know a great place that should be added to my guide?
-Tell me about it!
-</p>
+                <!-- SUBMIT BUTTON -->
+                <button type="submit">
+                    Suggest Place
+                </button>
 
+            </form>
 
-<form>
+        </section>
 
+    </main>
 
-<!-- PLACE NAME -->
 
-<label for="place-name">
-Place Name
-</label>
+    <!-- FOOTER -->
+    <footer>
 
-<input
-type="text"
-id="place-name"
-name="place-name"
-required
->
+        <p>
+            Created by Justine Kenneth San Diego &middot; 2026
+        </p>
 
-
-<!-- CATEGORY -->
-
-<fieldset>
-
-<legend>What type of place is it?</legend>
-
-<label for="food">
-<input
-type="radio"
-id="food"
-name="category"
-value="food"
->
-Food
-</label>
-
-<label for="study-spot">
-<input
-type="radio"
-id="study-spot"
-name="category"
-value="study-spot"
->
-Study Spot
-</label>
-
-<label for="outdoors">
-<input
-type="radio"
-id="outdoors"
-name="category"
-value="outdoors"
->
-Outdoors
-</label>
-
-</fieldset>
-
-
-<!-- WHAT'S GOOD ABOUT IT -->
-
-<fieldset>
-
-<legend>What's good about it?</legend>
-
-<label for="affordable">
-<input
-type="checkbox"
-id="affordable"
-name="good-points"
-value="affordable"
->
-Affordable
-</label>
-
-<label for="good-wifi">
-<input
-type="checkbox"
-id="good-wifi"
-name="good-points"
-value="good-wifi"
->
-Good Wi-Fi
-</label>
-
-<label for="quiet">
-<input
-type="checkbox"
-id="quiet"
-name="good-points"
-value="quiet"
->
-Quiet
-</label>
-
-</fieldset>
-
-
-<!-- CONTACT EMAIL -->
-
-<label for="contact-email">
-Contact Email
-</label>
-
-<input
-type="email"
-id="contact-email"
-name="contact-email"
-required
->
-
-
-<!-- BUTTON -->
-
-<button type="submit">
-Suggest Place
-</button>
-
-
-</form>
-
-</section>
-
-
-<footer>
-
-<p>
-Created by Justine Kenneth San Diego &middot; 2026
-</p>
-
-</footer>
+    </footer>
 
 
 </body>
 </html>
+```
