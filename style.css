@@ -1,15 +1,15 @@
-```css
+
 /* ========================================
    1. VARIABLES
    ======================================== */
 
 :root {
-    --brand-color: #2e5c8a;
+    --brand: #2e5c8a;
     --dark-ink: #1a3a5c;
-    --muted-grey: #777777;
+    --muted-grey: #555555;
     --light-background: #f4f7fa;
     --white: #ffffff;
-    --border-grey: #dddddd;
+    --border-grey: #cccccc;
 }
 
 
@@ -52,7 +52,7 @@ header {
     background-color: var(--white);
     padding: 25px;
     border-radius: 12px;
-    border-bottom: 4px solid var(--brand-color);
+    border-bottom: 4px solid var(--brand);
     margin-bottom: 30px;
 }
 
@@ -89,7 +89,7 @@ nav li {
 nav a {
     display: inline-block;
     padding: 8px 14px;
-    background-color: var(--brand-color);
+    background-color: var(--brand);
     color: var(--white);
     text-decoration: none;
     border-radius: 5px;
@@ -119,12 +119,8 @@ section:last-child {
 
 h2 {
     color: var(--dark-ink);
-    border-bottom: 2px solid var(--brand-color);
+    border-bottom: 2px solid var(--brand);
     padding-bottom: 8px;
-}
-
-h3 {
-    color: var(--dark-ink);
 }
 
 
@@ -141,10 +137,51 @@ footer {
 
 
 /* ========================================
-   4. COMPONENTS
+   4. PLACE CARDS
    ======================================== */
 
-/* ACTIVITY LIST */
+.place-card {
+    background-color: var(--light-background);
+    border-radius: 10px;
+
+    /* At least 16px padding */
+    padding: 20px;
+
+    /* Colored left border using brand variable */
+    border-left: 6px solid var(--brand);
+
+    /* Space between cards */
+    margin-bottom: 30px;
+}
+
+.place-card h3 {
+    /* Distinct font size */
+    font-size: 26px;
+
+    /* Distinct color */
+    color: var(--brand);
+
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.place-card .category {
+    color: var(--muted-grey);
+    font-weight: bold;
+}
+
+.place-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+
+/* ========================================
+   5. ACTIVITY LIST
+   ======================================== */
 
 .activities-list {
     padding-left: 20px;
@@ -155,7 +192,7 @@ footer {
 }
 
 .activities-list a {
-    color: var(--brand-color);
+    color: var(--brand);
     font-weight: bold;
 }
 
@@ -164,41 +201,16 @@ footer {
 }
 
 
-/* PLACE CARDS */
-
-.place {
-    margin-bottom: 30px;
-    padding: 20px;
-    border: 1px solid var(--border-grey);
-    border-radius: 10px;
-    background-color: var(--light-background);
-}
-
-.place h3 {
-    margin-top: 0;
-}
-
-.place .category {
-    color: var(--muted-grey);
-    font-weight: bold;
-}
-
-.place img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-top: 15px;
-}
-
-
 /* ========================================
-   5. SUGGEST A PLACE FORM
+   6. CONTACT FORM
    ======================================== */
 
 form {
     margin-top: 20px;
 }
+
+
+/* FORM LABELS */
 
 label {
     display: block;
@@ -207,18 +219,16 @@ label {
     font-weight: bold;
 }
 
+
+/* INPUTS */
+
 input[type="text"],
 input[type="email"] {
     width: 100%;
     padding: 12px;
-    border: 1px solid #cccccc;
+    border: 1px solid var(--border-grey);
     border-radius: 5px;
     font-size: 16px;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus {
-    outline: 2px solid var(--brand-color);
 }
 
 
@@ -226,14 +236,15 @@ input[type="email"]:focus {
 
 fieldset {
     margin-top: 20px;
-    padding: 15px;
-    border: 1px solid #cccccc;
+    padding: 20px;
+    border: 1px solid var(--border-grey);
     border-radius: 8px;
 }
 
 legend {
+    padding: 0 8px;
     font-weight: bold;
-    color: var(--dark-ink);
+    color: var(--brand);
 }
 
 fieldset label {
@@ -252,7 +263,7 @@ input[type="checkbox"] {
 button {
     margin-top: 20px;
     padding: 12px 20px;
-    background-color: var(--brand-color);
+    background-color: var(--brand);
     color: var(--white);
     border: none;
     border-radius: 5px;
@@ -267,7 +278,20 @@ button:hover {
 
 
 /* ========================================
-   6. RESPONSIVE DESIGN
+   7. FOCUS STATES
+   ======================================== */
+
+/* Visible focus for keyboard users */
+
+input:focus,
+textarea:focus {
+    outline: 3px solid var(--brand);
+    outline-offset: 2px;
+}
+
+
+/* ========================================
+   8. RESPONSIVE DESIGN
    ======================================== */
 
 @media (max-width: 600px) {
@@ -294,7 +318,7 @@ button:hover {
         text-align: center;
     }
 
-    .place img {
+    .place-card img {
         height: 200px;
     }
 
