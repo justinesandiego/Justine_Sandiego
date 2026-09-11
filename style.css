@@ -323,4 +323,37 @@ textarea:focus {
     }
 
 }
-```
+
+/* ========================================
+   MODULE 6.1 - FLEXBOX HEADER
+   ======================================== */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-header nav li {
+    margin: 0;
+}
+
+
+/* ========================================
+   CENTRE SOMETHING
+   ======================================== */
+
+#about h2 {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
