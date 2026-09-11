@@ -357,3 +357,17 @@ textarea:focus {
     justify-content: center;
     align-items: center;
 }
+
+/* ========================================
+   MODULE 6.2 - FLEXBOX PLACE CARDS
+   ======================================== */
+
+.place-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.place-card {
+    flex: 1 1 240px;
+}
