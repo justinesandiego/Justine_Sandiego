@@ -31,3 +31,47 @@ if (copyright) {
 console.log("Guide name:", guideName);
 console.log("Current year:", currentYear);
 console.log("Places reviewed:", placeCount);
+
+
+/* MODULE 8.3 - MAKE YOUR GUIDE DECIDE */
+
+// 1. Rating label
+const placeRating = 4.5;
+const ratingLabel = document.getElementById("rating-label");
+
+if (placeRating >= 4) {
+    ratingLabel.textContent = "Highly recommended";
+} else if (placeRating >= 2.5) {
+    ratingLabel.textContent = "Worth a visit";
+} else {
+    ratingLabel.textContent = "Only if you're nearby";
+}
+
+
+// 2. Budget check
+const priceLevel = 2;
+const isCurrentlyOpen = true;
+
+const isGoodOption = priceLevel <= 2 && isCurrentlyOpen;
+
+const budgetMessage = isGoodOption
+    ? "Good option right now"
+    : "Maybe another time";
+
+document.getElementById("budget-result").textContent = budgetMessage;
+
+
+// 3. Distance note
+const isWithinWalkingDistance = true;
+
+const distanceMessage = isWithinWalkingDistance
+    ? "Walking distance"
+    : "Better to commute";
+
+document.getElementById("distance-result").textContent = distanceMessage;
+
+
+// Console messages
+console.log("Place rating:", placeRating);
+console.log("Budget result:", budgetMessage);
+console.log("Distance:", distanceMessage);
